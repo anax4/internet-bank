@@ -1,0 +1,45 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+/* You can add global styles to this file, and also import other style files */
+
+.container {
+  width: 100%;
+}
+.cabecalho {
+  height: 11vh;
+  width: 100%;
+  background: #ffffff;
+  color: #f37920;
+  font-weight: bold;
+}
+.menu-header li {
+  display: block;
+  font-size: 16px;
+  margin-left: -24px;
+  padding: 0px;
+}
+.acessar-conta {
+  position: relative;
+  top: 10px;
+  background-color: #fff;
+  border: 0;
+  color: #333;
+}
+
+.btn-orange {
+  background-color: #f37920;
+  color: #fff;
+}
+@media screen and (min-width: 600px) {
+  .wrapper-header {
+    height: 15vh;
+    width: 100%;
+  }
+  .menu-header li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    margin: 10px;
+    top: 30px;
+    font-size: 18px;
+  }
+}
