@@ -1,1 +1,1 @@
-"#internet-bank" 
+"#internet-banking" 
