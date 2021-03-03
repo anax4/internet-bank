@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
 @NgModule({
@@ -24,6 +26,7 @@ import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes
     BrowserAnimationsModule,
     MatDialogModule,
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
