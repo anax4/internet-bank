@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 import Typed from 'typed.js';
 
 @Component({
@@ -8,15 +8,15 @@ import Typed from 'typed.js';
   styleUrls: ['./content.component.css'],
 })
 export class ContentComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     const options = {
       stringsElement: '#typed-strings',
       strings: [
         'Training banking juros amigo',
-        'Peça a portabilidade e venha ser Training Bankinhg hoje mesmo',
-        'Inovavor digital e seguro',
+        'Peça a portabilidade e venha ser Training Banking hoje mesmo',
+        'Inovador, digital e seguro',
       ],
       typeSpeed: 100,
       backSpeed: 100,
@@ -28,5 +28,9 @@ export class ContentComponent implements OnInit {
       loop: true,
     };
     const typed = new Typed('.typing-element', options);
+  }
+
+  gotoCadastroClientes() {
+    this.router.navigate(['cadastro-clientes']);
   }
 }

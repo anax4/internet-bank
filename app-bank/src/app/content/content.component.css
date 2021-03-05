@@ -5,7 +5,8 @@
   width: 100vw;
   height: 70vh;
   z-index: -9999;
-  top: -60px;
+  margin-top: 5.5rem;
+  /*top: 150px;*/
 }
 .box-tile {
   width: 40vw;
@@ -24,7 +25,9 @@
   font-family: "Crete Round", serif !important;
 }
 .tag {
-  font-size: 2-pt;
+  position: absolute !important;
+  top: -80px;
+  font-size: 5em;
   color: chocolate;
   font-weight: bold;
 }
@@ -40,4 +43,21 @@
     /* https://www.wealthandfinance-news.com/wp-content/uploads/2019/11/Online-banking.jpg*/
     no-repeat;
   background-size: cover;
+}
+
+.acessar-conta {
+  position: fixed;
+  left: float;
+  float: 90% !important;
+}
+
+.btn-home-cadastro-clientes {
+  position: absolute !important;
+  top: 250px;
+  padding: 20px;
+  font-size: 25px;
+  width: 40%;
+  background: #000;
+  color: #fff;
+  border: 2px solid;
 }
