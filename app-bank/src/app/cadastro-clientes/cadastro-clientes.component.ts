@@ -8,6 +8,8 @@ import { FormBuilder } from '@angular/forms';
 })
 export class CadastroClientesComponent implements OnInit {
   formCadastro;
+  valoresForm;
+  conversao;
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
@@ -18,9 +20,18 @@ export class CadastroClientesComponent implements OnInit {
       telefone: [''],
       endereco: [''],
     });
+    console.log(this.valoresForm);
+    this.formCadastro.valueChanges.pipe(debounceTime(1000)).subscribe((res) => {
+      console.log(res);
+      this.valoresForm = res;
+    });
   }
 
   cadastro() {
-    console.log(this.formCadastro.controls);
+    this.conversao = JSON.stringify(this.valoresForm);
+    localStorage.setItem('cadastro', this.conversao);
   }
+}
+function debounceTime(arg0: number): any {
+  throw new Error('Function not implemented.');
 }

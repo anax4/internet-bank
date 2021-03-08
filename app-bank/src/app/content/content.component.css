@@ -18,6 +18,7 @@
 }
 
 @import "~bootstrap/dist/css/bootstrap.css";
+
 .wrapper-content h1 {
   font-size: 40pt;
   color: #fff;
@@ -57,7 +58,8 @@
   padding: 20px;
   font-size: 25px;
   width: 40%;
-  background: #000;
+  background: #ed6825;
   color: #fff;
-  border: 2px solid;
+  border: 0.5px solid;
+  border-radius: 0.8em;
 }

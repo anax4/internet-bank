@@ -13,6 +13,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from '../app-routing/app-routing.module';
 import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes.component';
+import { HomeLogadaComponent } from './home-logada/home-logada.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +23,7 @@ import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes
     ContentComponent,
     FooterComponent,
     CadastroClientesComponent,
+    HomeLogadaComponent,
   ],
   imports: [
     BrowserModule,
